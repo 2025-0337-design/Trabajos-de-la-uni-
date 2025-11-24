@@ -20,7 +20,7 @@ while opcion != 3:
     print("2.Despedirse")
     print("3.salir ")
 
-    opcion = int(input("Elige una de las 3 opciones"))
+    opcion = int(input("Elige una de las 3 opciones: "))
 
     try:
         opcion = int(opcion)  
@@ -38,6 +38,6 @@ while opcion != 3:
         print("Bye Bye")
 
     elif opcion > 3:
-        print("la Opcion excede la cantidad de opcines validas")
-        break
+        print("La Opcion excede la cantidad de opcines validas ingresa un numero valido")
+        continue
     
