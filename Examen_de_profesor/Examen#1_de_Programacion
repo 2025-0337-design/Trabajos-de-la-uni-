@@ -15,29 +15,35 @@ opcion = 0
 
 
 while opcion != 3:
-    print("<---Manu de opciones--->")
-    print("1.Saludar")
-    print("2.Despedirse")
-    print("3.salir ")
+    print(" <---Manu de Opciones---> ")
+    print("1.Saludar ")
+    print("2.Despedirse ")
+    print("3.Salir ")
 
-    opcion = int(input("Elige una de las 3 opciones: "))
 
     try:
+        opcion = int(input("Elige una de las 3 opciones: "))
+
         opcion = int(opcion)  
     except ValueError:
-        print("Opción no válida. Debes escribir un número.")
+        print("Opcion no valida. Debes escribir un número.")
         continue 
 
+    if opcion < 0:
+       print("No se permiten numeros negativos. Ingrese un numero valido del 1 al 3")
+       continue
+
+    if opcion > 3:
+        print("La Opcion no existe. Ingresa un numero del 1 al tres")
+        continue
+
     if opcion == 1:
-        print("Saludos gracias por usar el codigo")
+        print("Saludos gracias por usar el codigo.")
 
     elif opcion == 2:
-        print("Adios gracias por usar el codigo")
+        print("Adios gracias por usar el codigo.")
 
     elif opcion == 3:
         print("Bye Bye")
 
-    elif opcion > 3:
-        print("La Opcion excede la cantidad de opcines validas ingresa un numero valido")
-        continue
     
